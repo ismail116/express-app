@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Header  from index hbs Page</h1>
+   {{>header}}
+    <h2>{{test}}</h2>
+    <h3>{{title}}</h3>
+
+    <form id="myForm">
+        <input type="text" id="address">
+        <button >Submit</button> 
+    </form>
+    <p id="location" ></p>
+     <p id="forecast" ></p>
+      <p id="error" ></p>
+    {{>footer}}
+    <h4>created by {{name}}</h4>
+    <script src="js/new.js"></script>
+</body>
+</html>
